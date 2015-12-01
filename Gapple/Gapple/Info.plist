@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+
+    <key>CFBundleIdentifier</key>
+    <string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
+    <key>CFBundleInfoDictionaryVersion</key>
+    <string>6.0</string>
+    <key>CFBundleSignature</key>
+    <string>????</string>
+
+    <key>CFBundleExecutable</key>
+    <string>$(EXECUTABLE_NAME)</string>
+
+    <key>CFBundleName</key>
+    <string>$(PRODUCT_NAME)</string>
+
+    <key>CFBundleDevelopmentRegion</key>
+    <string>en</string>
+
+    <key>CFBundleShortVersionString</key>
+    <string>1.0</string>
+    <key>CFBundleVersion</key>
+    <string>1</string>
+
+    <key>CFBundlePackageType</key>
+    <string>BNDL</string>
+
+    <key>NSPrincipalClass</key>
+    <string>Gapple</string>
+
+    <key>NSHumanReadableCopyright</key>
+    <string>Copyright © 2015 ___ironfish___. All rights reserved.</string>
+
+    <key>SupportedPluginCompatibilityUUIDs</key>
+    <array>
+        <string>60D52D22-7491-4CA7-95BA-88215BD88F8E</string>
+        <string>B61772F2-9975-4EC0-B22F-9A277C46ADD2</string>
+        <string>0A13A9ED-4864-4F07-AE70-60FB2F7EA63D</string>
+        <string>DAFFB2B4-77BC-4C25-8CE1-2405E652D54B</string>
+        <string>2B98D2DD-000B-4521-83EB-7BFCB9B161C8</string>
+        <string>608CE00F-4576-4CAD-B362-F3CCB7DE8D67</string>
+        <string>1146A009-E373-4DB6-AB4D-47E59A7E50FD</string>
+        <string>2183B2CD-BEDF-4AA6-AC18-A1BBED2E3354</string>
+        <string>19B53E95-0964-4AAB-88F9-6D2F8B7B6037</string>
+        <string>0941BB9F-231F-452D-A26F-47A43863C991</string>
+        <string>04D6EC0A-52FF-4BBE-9896-C0B5FB851BBA</string>
+        <string>FBE5B158-5602-4A6D-9CC5-8461B9B7054E</string>
+        <string>1CD40D64-945D-4D50-B12D-9CD865533506</string>
+        <string>88ED2D4C-D384-4BF5-8E94-B533455E6AAF</string>
+        <string>F4C26776-22B3-4A0A-96E1-EA8E4482E0B5</string>
+        <string>D1EFE124-86FF-4751-BF00-80B2C0D6F2E4</string>
+        <string>800E5C92-87D3-429B-8740-5C6183CD13EA</string>
+        <string>7C051997-F45A-4523-B053-2D262F94C775</string>
+        <string>DAF41AB7-F9AD-4273-9934-C81C74705B69</string>
+    </array>
+
+</dict>
+</plist>

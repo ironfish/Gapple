@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		68303A2D1C0DD4710065B175 /* GappleMessageViewer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68303A2C1C0DD4710065B175 /* GappleMessageViewer.swift */; };
+		68303A2F1C0DE0BC0065B175 /* GappleMailTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68303A2E1C0DE0BC0065B175 /* GappleMailTableView.swift */; };
+		68303A311C0DE1F00065B175 /* GappleUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68303A301C0DE1F00065B175 /* GappleUtils.swift */; };
 		68E216441C0AC98B00178EE7 /* Gapple.mailbundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = F1642B8D31FC32D69FBFFFA5 /* Gapple.mailbundle */; };
 		68E216461C0AC9EA00178EE7 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68E216451C0AC9EA00178EE7 /* CoreFoundation.framework */; };
 		68E2164C1C0D214300178EE7 /* Gapple.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68E2164B1C0D214300178EE7 /* Gapple.swift */; };
@@ -28,6 +31,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		68303A2C1C0DD4710065B175 /* GappleMessageViewer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GappleMessageViewer.swift; sourceTree = "<group>"; };
+		68303A2E1C0DE0BC0065B175 /* GappleMailTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GappleMailTableView.swift; sourceTree = "<group>"; };
+		68303A301C0DE1F00065B175 /* GappleUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GappleUtils.swift; sourceTree = "<group>"; };
 		68E216451C0AC9EA00178EE7 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
 		68E2164B1C0D214300178EE7 /* Gapple.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Gapple.swift; sourceTree = "<group>"; };
 		F164210D1C529E26A094302E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = Gapple/Info.plist; sourceTree = "<group>"; };
@@ -72,6 +78,9 @@
 			isa = PBXGroup;
 			children = (
 				68E2164B1C0D214300178EE7 /* Gapple.swift */,
+				68303A2C1C0DD4710065B175 /* GappleMessageViewer.swift */,
+				68303A2E1C0DE0BC0065B175 /* GappleMailTableView.swift */,
+				68303A301C0DE1F00065B175 /* GappleUtils.swift */,
 			);
 			path = Gapple;
 			sourceTree = "<group>";
@@ -158,6 +167,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				68E2164C1C0D214300178EE7 /* Gapple.swift in Sources */,
+				68303A2F1C0DE0BC0065B175 /* GappleMailTableView.swift in Sources */,
+				68303A311C0DE1F00065B175 /* GappleUtils.swift in Sources */,
+				68303A2D1C0DD4710065B175 /* GappleMessageViewer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

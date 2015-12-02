@@ -4,38 +4,55 @@ Adds Gmail style keyboard shortcuts to [Apple Mail](http://www.apple.com/osx/app
 
 ## Supported Shortcuts
 
+### Navigation
+
 | Key | Action |
 | :---: | ------ |
-| # | Delete message |
-| / | Search in message |
-| ? | Search in mailbox |
+| ^a | [Go to Archive](#ctrl-keys) |
+| ^d | [Go to Draft](#ctrl-keys) |
+| ^i | [Go to Inbox](#ctrl-keys) |
+| ^s | [Go to Flaggged](#ctrl-keys) |
+| ^t | [Go to Sent](#ctrl-keys) |
+| j | Next message |
+| J | Next message select |
+| k | Previous message |
+| K | Previous message select |
+
+**NOTE:** `^` = `Control` key
+
+### Search
+
+| Key | Action |
+| :---: | ------ |
+| / | Find in message |
+| ^/ | Find in mailbox |
+
+**NOTE:** `^` = `Control` key
+
+### Actions
+
+| Key | Action |
+| :---: | ------ |
 | ! | Mark as junk |
-| a | Reply all |
-| ctrl-a | [\*Go to archive](#ctrl-keys) |
-| c | Compose |
-| ctrl-d | [\*Go to draft](#ctrl-keys) |
-| e, y | Archive |
-| f | Forward |
-| ctrl-i | [\*Go to inbox](#ctrl-keys) |
-| I | Mark as read |
-| j | Previous message |
-| J | Previous message select |
-| k | Next message |
-| K | Next message select |
-| o | Open |
+| # | Delete message |
+| ? | Keyboard shortcuts |
+| c | Compose message |
+| e, y | Archive message |
+| f | Forward message |
+| o | Open message |
 | r | Reply |
-| ctrl-s | [\*Go to flag](#ctrl-keys) |
-| s | Toggle flag |
-| ctrl-t | [\*Go to sent](#ctrl-keys) |
+| a | Reply all |
+| I | Mark as read |
 | U | Mark as unread |
+| s | Toggle flag |
 
 ## Ctrl Keys
 
-Gmail supports `g and (a, d, i, s, t)` shortcuts to go to specific mailboxes. Due to the nature of creating a mail `bundle`, [swizzling](https://en.wikipedia.org/wiki/Pointer_swizzling) is required and it is somewhat difficult to capture the notion to `two` keys being pressed in sequence. So for now (until I figure out how to do it) you will need to use the `ctrl` instead of `g`.
+Gmail supports `g and (a, d, i, s, t)` shortcuts to go to specific mailboxes. Due to the nature of creating a mail `bundle`, [swizzling](https://en.wikipedia.org/wiki/Pointer_swizzling) is required and it is somewhat difficult to capture the notion to `two` keys being pressed in sequence. So for now (until I figure out how to do it) you will need to use the `Control [^]` key instead of `g`.
 
 ### Favorites Bar
 
-In addition to using `ctrl`, you will need to make sure that the following `mailboxes` are on the `favorites bar` as follows:
+In addition to using the `Control [^]` key, you will need to make sure that the following `mailboxes` are on the `favorites bar` as follows:
 
 ![favorites bar](images/favorites_bar.png)
 
@@ -99,7 +116,7 @@ The `SupportedPluginCompatibilityUUIDs` section of the `info.plist` looks like t
 
 You will need to be somewhat familiar with `git` and `xcode`.
 
-1. Open `terminal` and run the following command 
+1. Open `terminal` and run the following command
 ```bash
 mkdir ~/Desktop/test
 mkdir ~/Desktop/Gapple

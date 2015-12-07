@@ -7,52 +7,54 @@ Adds Gmail style keyboard shortcuts to [Apple Mail](http://www.apple.com/osx/app
 ### Navigation
 
 | Key | Action |
-| :---: | ------ |
-| ^a | [Go to Archive](#ctrl-keys) |
-| ^d | [Go to Draft](#ctrl-keys) |
-| ^i | [Go to Inbox](#ctrl-keys) |
-| ^s | [Go to Flaggged](#ctrl-keys) |
-| ^t | [Go to Sent](#ctrl-keys) |
-| j | Next message |
-| J | Next message select |
-| k | Previous message |
-| K | Previous message select |
+| ----: | ------ |
+| `g then a` | [Go to Archive](#g-keys) |
+| `g then d` | [Go to Draft](#g-keys) |
+| `g then i` | [Go to Inbox](#g-keys) |
+| `g then s` | [Go to Flaggged](#g-keys) |
+| `g then t` | [Go to Sent](#g-keys) |
+| `j` | Next message |
+| `<shift> + j` | Next message select |
+| `k` | Previous message |
+| `<shift> + k` | Previous message select |
+| `u` | Back to thread list |
 
-**NOTE:** `^` = `Control` key
+**NOTE:** `u` works only for open messages
 
 ### Search
 
 | Key | Action |
-| :---: | ------ |
-| / | Find in message |
-| ^/ | Find in mailbox |
+| ----: | ------ |
+| `/` | Find in message |
+| `^/` | Find in mailbox |
 
 **NOTE:** `^` = `Control` key
 
 ### Actions
 
 | Key | Action |
-| :---: | ------ |
-| ! | Mark as junk |
-| # | Delete message |
-| ? | Keyboard shortcuts |
-| c | Compose message |
-| e, y | Archive message |
-| f | Forward message |
-| o | Open message |
-| r | Reply |
-| a | Reply all |
-| I | Mark as read |
-| U | Mark as unread |
-| s | Toggle flag |
+| ----: | ------ |
+| `!` | Mark as junk |
+| `#` | Delete message |
+| `?` | Keyboard shortcuts |
+| `c` | Compose message |
+| `e` | Archive message |
+| `y` | Archive message |
+| `f` | Forward message |
+| `o` | Open message |
+| `r` | Reply |
+| `a` | Reply all |
+| `<shift> + i` | Mark as read |
+| `<shift> + u` | Mark as unread |
+| `s` | Toggle flag |
 
-## Ctrl Keys
+## G Keys
 
-Gmail supports `g and (a, d, i, s, t)` shortcuts to go to specific mailboxes. Due to the nature of creating a mail `bundle`, [swizzling](https://en.wikipedia.org/wiki/Pointer_swizzling) is required and it is somewhat difficult to capture the notion to `two` keys being pressed in sequence. So for now (until I figure out how to do it) you will need to use the `Control [^]` key instead of `g`.
+Gmail supports `g then (a, d, i, s, t)` shortcuts to go to specific mailboxes. In order for the `g` configuration to work like Gmail, you will need to configure your `Favorites Bar`.
 
 ### Favorites Bar
 
-In addition to using the `Control [^]` key, you will need to make sure that the following `mailboxes` are on the `favorites bar` as follows:
+You will need to make sure that the following `mailboxes` are on the `favorites bar` as follows:
 
 ![favorites bar](images/favorites_bar.png)
 
@@ -136,7 +138,7 @@ This will generate `Gapple.mailbundle` in the `~/Desktop/test` folder. Follow [H
 ## To Do
 
 1. Write tests
-2. Find a way to use `g` instead of the `ctrl` key
+2. ~~Find a way to use `g` instead of the `ctrl` key~~
 3. Implement `move to mailbox`
 
 ## Disclaimer

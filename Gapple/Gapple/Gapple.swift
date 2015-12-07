@@ -18,6 +18,8 @@ class Gapple: NSObject {
     dispatch_once(&Static.token) {
       GappleMailTableView.initialize()
       GappleMessageViewer.initialize()
+      GappleMessageListController.initialize()
+      GappleMessageViewController.initialize()
       NSLog("Gapple Initialized")
     }
   }

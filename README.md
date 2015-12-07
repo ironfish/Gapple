@@ -139,7 +139,8 @@ This will generate `Gapple.mailbundle` in the `~/Desktop/test` folder. Follow [H
 
 1. Write tests
 2. ~~Find a way to use `g` instead of the `ctrl` key~~
-3. Implement `move to mailbox`
+3. Implement `g then l` for `Go to label`
+4. Implement `l` and `v` for `Move to ...`
 
 ## Disclaimer
 

@@ -8,63 +8,48 @@ Adds Gmail style keyboard shortcuts to [Apple Mail](http://www.apple.com/osx/app
 
 | Key | Action |
 | ----: | ------ |
-| `g then a` | [Go to Archive](#g-keys) |
-| `g then d` | [Go to Draft](#g-keys) |
-| `g then i` | [Go to Inbox](#g-keys) |
-| `g then s` | [Go to Flaggged](#g-keys) |
-| `g then t` | [Go to Sent](#g-keys) |
-| `j` | Next message |
-| `<shift> + j` | Next message select |
-| `k` | Previous message |
-| `<shift> + k` | Previous message select |
-| `u` | Back to thread list |
-
-**NOTE:** `u` works only for open messages
-
-### Search
-
-| Key | Action |
-| ----: | ------ |
-| `/` | Find in message |
-| `^/` | Find in mailbox |
-
-**NOTE:** `^` = `Control` key
-
-### Actions
-
-| Key | Action |
-| ----: | ------ |
 | `!` | Mark as junk |
 | `#` | Delete message |
-| `?` | Keyboard shortcuts |
+| `/` | Find in mailbox/message |
+| `?` | Open Keyboard shortcuts |
+| `<shift> + i` | Mark as read |
+| `<shift> + j` | Older conversation select |
+| `<shift> + k` | Newer conversation select |
+| `<shift> + u` | Mark as unread |
+| `^!` | Mark as junk |
+| `a` | Reply all |
 | `c` | Compose message |
 | `e` | Archive message |
-| `y` | Archive message |
 | `f` | Forward message |
+| `g then a` | [Go to Archive](#g-keys) |
+| `g then c` | Go to Contacts |
+| `g then d` | Go to Draft |
+| `g then i` | Go to Inbox |
+| `g then l` | Go to Label |
+| `g then s` | [Go to Flaggged](#g-keys) |
+| `g then t` | Go to Sent |
+| `j` | Older conversation |
+| `k` | Newer conversation |
+| `l` | Open "copy to" menu |
+| `n` | Read next message |
 | `o` | Open message |
+| `p` | Read previous message |
 | `r` | Reply |
-| `a` | Reply all |
-| `<shift> + i` | Mark as read |
-| `<shift> + u` | Mark as unread |
 | `s` | Toggle flag |
+| `u` | Back to thread list |
+| `v` | Open "move to" menu |
+| `y` | Archive message |
+
+**NOTE:** `u` works only for open messages
+**NOTE:** `^` = `Control` key
 
 ## G Keys
 
-Gmail supports `g then (a, d, i, s, t)` shortcuts to go to specific mailboxes. In order for the `g` configuration to work like Gmail, you will need to configure your `Favorites Bar`.
-
-### Favorites Bar
-
-You will need to make sure that the following `mailboxes` are on the `favorites bar` as follows:
+Gmail supports `g then (a, c, d, i, s, t)` shortcuts to go to specific mailboxes. In order for the `g then ...` configuration to work for `Archive` and `Flagged`, you will need to configure your `Favorites Bar` to include these two folders. You can have other folders as well, but you **must** include `Archive` and `Flagged`. Your `Favorites Bar` should look something like the following:
 
 ![favorites bar](images/favorites_bar.png)
 
 If you are not familiar with the `favorites bar`, see the following [instructions](https://support.apple.com/kb/PH22268?locale=en_US&viewlocale=en_US) for help.
-
-### Favorites Bar Keyboard Shortcuts
-
-By default, when you add folders to the `favorites bar`, Apple assigns `command-#` as a keyboard shortcut, so the `order` in which they appear is **important**. Furthermore, Apple only assigns `shortcuts` to the first four favorites. Therefore to make `Go to archive` work, you must assign the keyboard shortcut `command-5` yourself via the `Keyboard Shortcuts` dialog in `System Preferences`. See the following [instructions](https://support.apple.com/kb/PH21534?viewlocale=en_US&locale=en_US) if you are unfamiliar with how to do this. Following is what your `Go to Favorite Mailbox` menu should look like:
-
-![go to favorite mailbox](images/go_to_favorite_mailbox.png)
 
 ## How to Install
 
@@ -139,8 +124,12 @@ This will generate `Gapple.mailbundle` in the `~/Desktop/test` folder. Follow [H
 
 1. Write tests
 2. ~~Find a way to use `g` instead of the `ctrl` key~~
-3. Implement `g then l` for `Go to label`
-4. Implement `l` and `v` for `Move to ...`
+3. ~~Implement `g then l` for `Go to label`~~
+4. ~~Implement `g then c` for `Open contacts`~~
+5. ~~Implement `l` for `Open "copy to" menu`~~
+6. ~~Implement `v` for `Open "move to" menu`~~
+7. Implement `copy to` function
+8. Implement `move to` function
 
 ## Disclaimer
 

@@ -16,30 +16,22 @@ class GappleMessageViewController: NSObject {
     }
 
     dispatch_once(&Static.token) {
-      let cls: AnyClass = NSClassFromString("MessageViewController")!
-      let origSelector = Selector(Binding.KeyDown.rawValue)
-      let swizSelector = Selector(Binding.Swizzle.rawValue)
-      let origMethod = class_getInstanceMethod(cls, origSelector)
-      let swizMethod = class_getInstanceMethod(self, swizSelector)
-      class_addMethod(cls, swizSelector, method_getImplementation(origMethod), method_getTypeEncoding(origMethod))
-      class_replaceMethod(cls, origSelector, method_getImplementation(swizMethod), method_getTypeEncoding(swizMethod))
-      NSLog("GappleMessageViewController Initialized")
+      let utils: Utils = Utils.instance
+      utils.dispatchOnce(self, clazz: Clazz.MessageViewController)
     }
   }
 
-  dynamic func swizKeyDown(event: NSEvent) {
-    let shorts: Shortcuts = Shortcuts.instance
-    let key: String = shorts.getChar(event)
+  dynamic func swizKeyDown(event:NSEvent) {
+    let utils: Utils = Utils.instance
+    let key: String = utils.getChar(event)
 
-    NSLog("MESSAGE-VIEW-CONTROLLER: " + String(event))
+    NSLog(Clazz.MessageViewController.rawValue + ": " + String(event))
 
     switch key {
-    case "j":
-      self.eventDate = nil
-      self.swizKeyDown(shorts.getEvent(withKey: 124))
-    case "k":
-      self.eventDate = nil
-      self.swizKeyDown(shorts.getEvent(withKey: 123))
+    case "n":
+      self.swizKeyDown(utils.getEvent(self, withKey: Codes.ArrowRt.get()))
+    case "p":
+      self.swizKeyDown(utils.getEvent(self, withKey: Codes.ArrowLf.get()))
     default:
       self.swizKeyDown(event)
     }

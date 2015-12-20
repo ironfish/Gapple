@@ -9,13 +9,20 @@
 /* Begin PBXBuildFile section */
 		68303A2D1C0DD4710065B175 /* GappleMessageViewer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68303A2C1C0DD4710065B175 /* GappleMessageViewer.swift */; };
 		68303A2F1C0DE0BC0065B175 /* GappleMailTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68303A2E1C0DE0BC0065B175 /* GappleMailTableView.swift */; };
+		68AE71A81C26043E0063E298 /* ToViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68AE71A61C26043E0063E298 /* ToViewController.swift */; };
+		68AE71A91C26043E0063E298 /* ToViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 68AE71A71C26043E0063E298 /* ToViewController.xib */; };
 		68E216441C0AC98B00178EE7 /* Gapple.mailbundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = F1642B8D31FC32D69FBFFFA5 /* Gapple.mailbundle */; };
 		68E216461C0AC9EA00178EE7 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68E216451C0AC9EA00178EE7 /* CoreFoundation.framework */; };
 		68E2164C1C0D214300178EE7 /* Gapple.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68E2164B1C0D214300178EE7 /* Gapple.swift */; };
+		F1642041DDAB987766748440 /* AppleScriptObjC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1642A755FFF388AB0A6EA99 /* AppleScriptObjC.framework */; };
 		F16420A35C12148024F28A30 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1642AD38C7329540C8B4746 /* Cocoa.framework */; };
 		F16420F913F131B51225E2EB /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F16424F257FA944D97E475F1 /* AppKit.framework */; };
-		F16421CE0D6462A6AC2F4885 /* Shortcuts.swift in Sources */ = {isa = PBXBuildFile; fileRef = F16426106A96B338AE910ACB /* Shortcuts.swift */; };
-		F16428E016E267FE64F7BDB0 /* GappleMessageListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1642A81DF34D70F40570214 /* GappleMessageListController.swift */; };
+		F16421CE0D6462A6AC2F4885 /* ShortcutService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F16426106A96B338AE910ACB /* ShortcutService.swift */; };
+		F1642C5CCC3E74894CD47F6F /* MailboxService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F16425BE99843CFE49F5CBBA /* MailboxService.swift */; };
+		F1642D55535389A166390987 /* ScriptingBridge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1642D8CB7BD7993397FED4F /* ScriptingBridge.framework */; };
+		F1642D981188816236490A69 /* Gapple.entitlements in Resources */ = {isa = PBXBuildFile; fileRef = F1642C000A8809BEF6E96EDB /* Gapple.entitlements */; };
+		F1642DFE29DE3FF5C15B0BE5 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1642448A81F9B8746DDDC3C /* Utils.swift */; };
+		F1642E613612651E30588744 /* GappleMessageListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F16420334E2CF312E5B8E311 /* GappleMessageListController.swift */; };
 		F1642ED4CFF32A2B480F2E4D /* GappleMessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1642AE8EA8A4440CBB51AC2 /* GappleMessageViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -35,15 +42,22 @@
 /* Begin PBXFileReference section */
 		68303A2C1C0DD4710065B175 /* GappleMessageViewer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GappleMessageViewer.swift; sourceTree = "<group>"; };
 		68303A2E1C0DE0BC0065B175 /* GappleMailTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GappleMailTableView.swift; sourceTree = "<group>"; };
+		68AE71A61C26043E0063E298 /* ToViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToViewController.swift; sourceTree = "<group>"; };
+		68AE71A71C26043E0063E298 /* ToViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ToViewController.xib; sourceTree = "<group>"; };
 		68E216451C0AC9EA00178EE7 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
 		68E2164B1C0D214300178EE7 /* Gapple.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Gapple.swift; sourceTree = "<group>"; };
+		F16420334E2CF312E5B8E311 /* GappleMessageListController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GappleMessageListController.swift; sourceTree = "<group>"; };
 		F164210D1C529E26A094302E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = Gapple/Info.plist; sourceTree = "<group>"; };
+		F1642448A81F9B8746DDDC3C /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		F16424F257FA944D97E475F1 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
-		F16426106A96B338AE910ACB /* Shortcuts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Shortcuts.swift; sourceTree = "<group>"; };
-		F1642A81DF34D70F40570214 /* GappleMessageListController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GappleMessageListController.swift; sourceTree = "<group>"; };
+		F16425BE99843CFE49F5CBBA /* MailboxService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MailboxService.swift; sourceTree = "<group>"; };
+		F16426106A96B338AE910ACB /* ShortcutService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShortcutService.swift; sourceTree = "<group>"; };
+		F1642A755FFF388AB0A6EA99 /* AppleScriptObjC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppleScriptObjC.framework; path = System/Library/Frameworks/AppleScriptObjC.framework; sourceTree = SDKROOT; };
 		F1642AD38C7329540C8B4746 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		F1642AE8EA8A4440CBB51AC2 /* GappleMessageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GappleMessageViewController.swift; sourceTree = "<group>"; };
 		F1642B8D31FC32D69FBFFFA5 /* Gapple.mailbundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Gapple.mailbundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		F1642C000A8809BEF6E96EDB /* Gapple.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.entitlements; path = Gapple.entitlements; sourceTree = "<group>"; };
+		F1642D8CB7BD7993397FED4F /* ScriptingBridge.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ScriptingBridge.framework; path = System/Library/Frameworks/ScriptingBridge.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +68,8 @@
 				F16420A35C12148024F28A30 /* Cocoa.framework in Frameworks */,
 				F16420F913F131B51225E2EB /* AppKit.framework in Frameworks */,
 				68E216461C0AC9EA00178EE7 /* CoreFoundation.framework in Frameworks */,
+				F1642D55535389A166390987 /* ScriptingBridge.framework in Frameworks */,
+				F1642041DDAB987766748440 /* AppleScriptObjC.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -64,6 +80,7 @@
 			isa = PBXGroup;
 			children = (
 				F164210D1C529E26A094302E /* Info.plist */,
+				F1642C000A8809BEF6E96EDB /* Gapple.entitlements */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -84,9 +101,13 @@
 				68E2164B1C0D214300178EE7 /* Gapple.swift */,
 				68303A2C1C0DD4710065B175 /* GappleMessageViewer.swift */,
 				68303A2E1C0DE0BC0065B175 /* GappleMailTableView.swift */,
-				F16426106A96B338AE910ACB /* Shortcuts.swift */,
-				F1642A81DF34D70F40570214 /* GappleMessageListController.swift */,
+				F16426106A96B338AE910ACB /* ShortcutService.swift */,
 				F1642AE8EA8A4440CBB51AC2 /* GappleMessageViewController.swift */,
+				F16425BE99843CFE49F5CBBA /* MailboxService.swift */,
+				68AE71A61C26043E0063E298 /* ToViewController.swift */,
+				68AE71A71C26043E0063E298 /* ToViewController.xib */,
+				F1642448A81F9B8746DDDC3C /* Utils.swift */,
+				F16420334E2CF312E5B8E311 /* GappleMessageListController.swift */,
 			);
 			path = Gapple;
 			sourceTree = "<group>";
@@ -105,6 +126,8 @@
 				68E216451C0AC9EA00178EE7 /* CoreFoundation.framework */,
 				F1642AD38C7329540C8B4746 /* Cocoa.framework */,
 				F16424F257FA944D97E475F1 /* AppKit.framework */,
+				F1642D8CB7BD7993397FED4F /* ScriptingBridge.framework */,
+				F1642A755FFF388AB0A6EA99 /* AppleScriptObjC.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -162,6 +185,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F1642D981188816236490A69 /* Gapple.entitlements in Resources */,
+				68AE71A91C26043E0063E298 /* ToViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -174,10 +199,13 @@
 			files = (
 				68E2164C1C0D214300178EE7 /* Gapple.swift in Sources */,
 				68303A2F1C0DE0BC0065B175 /* GappleMailTableView.swift in Sources */,
+				68AE71A81C26043E0063E298 /* ToViewController.swift in Sources */,
 				68303A2D1C0DD4710065B175 /* GappleMessageViewer.swift in Sources */,
-				F16421CE0D6462A6AC2F4885 /* Shortcuts.swift in Sources */,
-				F16428E016E267FE64F7BDB0 /* GappleMessageListController.swift in Sources */,
+				F16421CE0D6462A6AC2F4885 /* ShortcutService.swift in Sources */,
 				F1642ED4CFF32A2B480F2E4D /* GappleMessageViewController.swift in Sources */,
+				F1642C5CCC3E74894CD47F6F /* MailboxService.swift in Sources */,
+				F1642DFE29DE3FF5C15B0BE5 /* Utils.swift in Sources */,
+				F1642E613612651E30588744 /* GappleMessageListController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -201,7 +229,8 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_ENTITLEMENTS = Gapple.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer: Duncan DeVore (86HZZ428T8)";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
@@ -239,7 +268,8 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_ENTITLEMENTS = Gapple.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer: Duncan DeVore (86HZZ428T8)";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -270,7 +300,8 @@
 		F1642F5CAB418B79F56802E6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_ENTITLEMENTS = Gapple.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer: Duncan DeVore (86HZZ428T8)";
 				COMBINE_HIDPI_IMAGES = YES;
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = Gapple/Info.plist;
@@ -285,7 +316,8 @@
 		F1642F6A29CBBC05423A6771 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_ENTITLEMENTS = Gapple.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer: Duncan DeVore (86HZZ428T8)";
 				COMBINE_HIDPI_IMAGES = YES;
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = Gapple/Info.plist;
